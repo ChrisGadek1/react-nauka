@@ -1,11 +1,16 @@
 import React from 'react';
 import './App.scss'
 
+import StoreProvider from "./store/StoreProvider";
+
 const App = props => {
     return (
-        <header>
-            Hello World!
-        </header>
+        <StoreProvider>
+            <header>
+                Hello World!
+            </header>
+        </StoreProvider>
+
     );
 }
 
